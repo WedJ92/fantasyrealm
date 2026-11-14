@@ -3,20 +3,20 @@
 ## Rôles
 | Rôle | Comment on l'obtient | Ce qu'il peut faire |
 |---|---|---|
-| Visiteur | | |n as pas de compte peut regarger les perso mais ne peut pas commenter ou publier
-| Utilisateur | | |possede un compte mm droit que utiliqsateur + peu creer son perso et commenter 
-| Employé | | |meme droit que utlisateur + gere les publication et comptes(validation ,supression,ban)
-| Administrateur | | |tout les droit + création du compte en dehors de appli contrairement autres 
+| Visiteur | |n as pas de compte peut regarger les perso mais ne peut pas commenter ou publier |
+| Utilisateur |SIGN UP |possede un compte mm droit que visiteur + peu creer son perso et commenter  | 
+| Employé |ADMIN | gere les publication et comptes(validation ,supression,ban) |
+| Administrateur | |tout les droit + création du compte en dehors de appli contrairement autres  |
 
 ## livrable a rendre 
-- RG01 :Bonne pratique git (main,develop,merging etc)
-- RG02 :fichiers création de base de données + intégration de données (L’utilisation de fixture et / ou de migration n’implique pas que vous maitrisez le SQL)
-- RGO3 : présenter l’application et donner des identifiants afin de réaliser
+- Bonne pratique git (main,develop,merging etc)
+- fichiers création de base de données + intégration de données (L’utilisation de fixture et / ou de migration n’implique pas que vous maitrisez le SQL)
+-  présenter l’application et donner des identifiants afin de réaliser
 les différents parcours possibles
-- RG03 :charte graphique en format PDF (palettes de couleur + police,3
+- charte graphique en format PDF (palettes de couleur + police,3
 maquettes bureautiques et 3 maquettes mobiles)
-- RG04 :Explication de votre gestion de projet
-- RG05 :documentation technique de votre application
+- :Explication de votre gestion de projet
+- documentation technique de votre application
 
 ## règles de gestion 
 - RG01 :- RG01 : avant l'envoi d'un message de contact, le pseudo saisi doit exister dans la base.
