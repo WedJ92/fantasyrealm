@@ -94,3 +94,9 @@ INSERT INTO article (id_article, nom, actif, image, type) VALUES
 (5, 'Bouclier sylvestre', TRUE, 'images/articles/bouclier-sylvestre.png', 'nature'),
 (6, 'Couronne maudite', FALSE, 'images/articles/couronne-maudite.png', 'ombre');
 
+INSERT INTO personnage (id_personnage,nom,genre,couleur_peau,couleur_yeux,couleur_cheveux,forme_yeux,forme_bouche,forme_nez,partage,autorise,image,date_creation,id_utilisateur) VALUES
+(1,'bobby','homme','rouge','orange','vert','rond','fine','zlatan',TRUE,TRUE,'images/personnages/bobby.png','2026-09-03 14:12:00',3),
+(2,'sarah','femme','bleu','vert','blond','rond','large','pointue',TRUE,TRUE,'images/personnages/sarah.png','2026-09-21 09:45:30',3),
+(3,'mike','homme','jaune','marron','noir','rond','large','long',FALSE,TRUE,'images/personnages/mike.png','2026-10-08 18:20:15',4),
+(4,'lisa','femme','violet','bleu','roux','rond','fine','mini',FALSE,FALSE,'images/personnages/lisa.png','2026-10-27 11:05:00',5);
+
