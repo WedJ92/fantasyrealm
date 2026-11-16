@@ -1,4 +1,6 @@
-CREATE DATABASE fantasyrealm;
+DROP DATABASE IF EXISTS fantasyrealm;
+
+CREATE DATABASE fantasyrealm CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 USE fantasyrealm;
 
@@ -64,6 +66,31 @@ CREATE TABLE personnage_article (
     FOREIGN KEY (id_article) REFERENCES article(id_article )
 );
 
-    
-    
-   
+INSERT INTO role (id_role, libelle) VALUES
+(1, 'administrateur'),
+(2, 'employe'),
+(3, 'utilisateur');
+
+INSERT INTO utilisateur (id_utilisateur, pseudo, mail, password, suspendu, motdepasse_a_modifier, id_role) VALUES
+(1, 'admin', 'admin@fantasyrealm.fr', '$2y$12$9vdtMpviEfMqzA6EeSfld.QCOFPDKbCZTUJRosu1.Dw3.HWcYjaVG', FALSE, FALSE, 1);
+
+INSERT INTO utilisateur (id_utilisateur, pseudo, mail, password, suspendu, motdepasse_a_modifier, id_role) VALUES
+(2,'employe','employe@fantasyrealm.fr','$2y$12$3nrO0FRQ/4dq4IcqWElJOuP4Ls5/u3TagM1suYf.WvhsDt5d5NhCa',FALSE,FALSE,2);
+
+INSERT INTO utilisateur (id_utilisateur, pseudo, mail, password, suspendu, motdepasse_a_modifier, id_role) VALUES
+(3,'user','user@fantasyrealm.fr','$2y$12$Rr4oQZJzlQYKojXrY.12o.BpgzrZWMs2wEps85apkTud8zVIggdj6',FALSE,FALSE,3);
+
+INSERT INTO utilisateur (id_utilisateur, pseudo, mail, password, suspendu, motdepasse_a_modifier, id_role) VALUES
+(4,'userban','userban@fantasy.fr','$2y$12$Rr4oQZJzlQYKojXrY.12o.BpgzrZWMs2wEps85apkTud8zVIggdj6',TRUE,FALSE,3);
+
+INSERT INTO utilisateur (id_utilisateur, pseudo, mail, password, suspendu, motdepasse_a_modifier, id_role) VALUES
+(5,'chgmdp','chgmdp@fantasy.fr','$2y$12$Rr4oQZJzlQYKojXrY.12o.BpgzrZWMs2wEps85apkTud8zVIggdj6',FALSE,TRUE,3);
+
+INSERT INTO article (id_article, nom, actif, image, type) VALUES
+(1, 'Corne du dragon', TRUE, 'images/articles/corne-dragon.png', 'feu'),
+(2, 'Épée de givre', TRUE, 'images/articles/epee-givre.png', 'glace'),
+(3, 'Cape des ombres', TRUE, 'images/articles/cape-ombres.png', 'ombre'),
+(4, 'Amulette de foudre', TRUE, 'images/articles/amulette-foudre.png', 'foudre'),
+(5, 'Bouclier sylvestre', TRUE, 'images/articles/bouclier-sylvestre.png', 'nature'),
+(6, 'Couronne maudite', FALSE, 'images/articles/couronne-maudite.png', 'ombre');
+
