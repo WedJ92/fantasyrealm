@@ -100,3 +100,18 @@ INSERT INTO personnage (id_personnage,nom,genre,couleur_peau,couleur_yeux,couleu
 (3,'mike','homme','jaune','marron','noir','rond','large','long',FALSE,TRUE,'images/personnages/mike.png','2026-10-08 18:20:15',4),
 (4,'lisa','femme','violet','bleu','roux','rond','fine','mini',FALSE,FALSE,'images/personnages/lisa.png','2026-10-27 11:05:00',5);
 
+INSERT INTO commentaire (id_commentaire,note,commentaire,date_commentaire,valide,id_utilisateur,id_personnage) VALUES
+(1,5,'Excellent personnage !','2026-09-04 10:30:00',TRUE,5,1),
+(2,4,'Très bon design.','2026-09-22 14:15:00',TRUE,5,2),
+(3,2,'Pas très original.','2026-10-09 16:45:00',FALSE,5,1),
+(4,3,'Moyen.','2026-10-28 12:00:00',TRUE,4,2),
+(5,1,'Je n''aime pas du tout les couleurs.','2026-11-12 09:10:00',FALSE,4,1);
+
+INSERT INTO personnage_article (id_personnage,id_article) VALUES
+(1,1),
+(1,2),
+(1,3),
+(2,1),
+(2,4),
+(3,3),
+(3,5);
