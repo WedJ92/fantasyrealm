@@ -3,7 +3,7 @@
 ## Rôles
 | Rôle | Comment on l'obtient | Ce qu'il peut faire |
 |---|---|---|
-| Visiteur | RIEN |n as pas de compte peut regarger les perso mais ne peut pas commenter ou publier |
+| Visiteur | RIEN |n as pas de compte peut regarder les perso mais ne peut pas commenter ou publier |
 | Utilisateur | CREATION COMPTE |possede un compte mm droit que visiteur + peu creer son perso et commenter  | 
 | Employé | ADMIN | gere les publication et comptes(validation ,supression,ban) |
 | Administrateur |CREATION EN DEHORS DE L APPLI |gere les compte employé + a accès a tout les logs 
@@ -29,7 +29,7 @@ Ordre = ordre logique de développement (des comptes jusqu'à l'administration).
 - RG05 : le menu affiche « Connexion » si la personne n'est pas connectée, et « Déconnexion » si elle l'est.
 - RG06 : en cas de mot de passe oublié, l'utilisateur fournit son mail et son pseudo ; s'ils correspondent à un compte, il reçoit par mail un nouveau mot de passe sécurisé.
 - RG07 : ce mot de passe temporaire doit obligatoirement être changé à la première connexion.
-- RG08 : un compte suspendu ne peut plus se connecter.
+- RGO8 : Suspendre un compte utilisateur (RG08)
 
 ### 2. Contact
 - RG09 : si l'utilisateur est connecté, les champs mail et pseudo du formulaire de contact sont remplis automatiquement.
@@ -68,3 +68,40 @@ Ordre = ordre logique de développement (des comptes jusqu'à l'administration).
 - Accessibilité conforme au RGAA
 - Une base de données relationnelle et une base NoSQL
 - Base créée et remplie par un fichier SQL écrit à la main
+
+## Cas d'utilisation par role
+
+Visiteur :
+- S'inscrire (RG01, RG02)
+- Se connecter (RG04, RG08)
+- Réinitialiser son mot de passe (RG06)
+- Contacter l'entreprise (RG09, RG10, RG11)
+- Consulter les personnages partagés (RG19)
+
+
+Utilisateur :
+- Modifier son mot de passe (RG07)
+- Se déconnecter (RG05)
+- dupliquer un personnage (RG20)
+- Créer un personnage (RG12)
+- déposer un avis (RG22)
+- Personnaliser son personnage (RG13, RG17)
+- Partager ou arrêter de partager son personnage (RG18)
+
+Employé : 
+- Valider ou rejeter un personnage (RG13, RG14, RG21)
+- valider ou refuser un avis (RG24) 
+- Suspendre un compte utilisateur (RG08)
+- Gérer les articles (RG17)
+
+Administrateur :
+- créer et gerer les comptes employés(RG27,RG28)
+- consulter les logs (RG29)
+
+Héritage :
+- Administrateur hérite d’Employé (RG26)
+- Utilisateur hérite de Visiteur
+
+
+- Contraintes sans cas d'utilisation : RG03, RG15, RG16, RG23, RG25
+
