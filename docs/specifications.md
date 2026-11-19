@@ -29,7 +29,7 @@ Ordre = ordre logique de développement (des comptes jusqu'à l'administration).
 - RG05 : le menu affiche « Connexion » si la personne n'est pas connectée, et « Déconnexion » si elle l'est.
 - RG06 : en cas de mot de passe oublié, l'utilisateur fournit son mail et son pseudo ; s'ils correspondent à un compte, il reçoit par mail un nouveau mot de passe sécurisé.
 - RG07 : ce mot de passe temporaire doit obligatoirement être changé à la première connexion.
-- RGO8 : Suspendre un compte utilisateur (RG08)
+- RG08 : un compte suspendu ne peut plus se connecter.
 
 ### 2. Contact
 - RG09 : si l'utilisateur est connecté, les champs mail et pseudo du formulaire de contact sont remplis automatiquement.
